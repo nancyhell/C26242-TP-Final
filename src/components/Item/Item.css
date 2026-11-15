@@ -1,3 +1,4 @@
+
 .card {
   width: 20rem;
   display: flex;
@@ -9,24 +10,25 @@
   overflow: hidden;
 
   transition: 0.25s;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 5px 18px rgba(23, 103, 83, 0.08);
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: var(--primary);
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 24px rgba(23, 103, 83, 0.13);
 }
 
 .card img {
   width: 100%;
   height: 18rem;
   object-fit: cover;
+  background: white;
 }
 
 .card h3 {
   padding: 1rem 1rem 0.4rem;
-  font-size: 1.35rem;
+  font-size: 1.15rem;
   color: var(--text);
 }
 
@@ -35,23 +37,21 @@
   color: var(--text-secondary);
   line-height: 1.5;
   flex: 1;
-}
 
-.card p:last-of-type {
-  padding: 1rem;
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.card button {
-  margin: 0 1rem 1rem;
-}
-
-.card p:first-of-type {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.card p:last-of-type {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.card button {
+  margin: 0 1rem 1rem;
 }

@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +6,24 @@
 }
 
 :root {
-  --bg: #384152;
-  --surface: #465166;
-  --card: #546178;
-  --border: #68758f;
-  --text: #f4f4f4;
-  --text-secondary: #d7dce3;
-  --disabled: #8d97ab;
+  /* Identidad visual Tienda Skin */
+  --bg: #f7faf8;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --border: #e1ebe6;
 
-  --primary: #f4a261;
-  --primary-hover: #f6b67a;
-  --success: #52b788;
-  --danger: #e63946;
+  --text: #263d36;
+  --text-secondary: #718078;
+  --disabled: #aab7b0;
+
+  --primary: #30c59f;
+  --primary-hover: #24aa87;
+  --success: #176753;
+  --danger: #d9534f;
+
+  --accent: #f1dd5f;
 }
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -85,9 +91,10 @@ a {
   padding: 0.7rem 1.3rem;
   cursor: pointer;
   font: inherit;
-  color: #1f2937;
+  color: white;
   transition: 0.25s;
 }
+
 .bg-success,
 .bg-delete {
   color: white;
@@ -97,17 +104,14 @@ a {
   background: var(--primary-hover);
 }
 
-.bg-success:hover {
-  filter: brightness(0.9);
-}
-
+.bg-success:hover,
 .bg-delete:hover {
   filter: brightness(0.9);
 }
 
 .btn:disabled {
   background: var(--disabled);
-  color: var(--text-secondary);
+  color: white;
   cursor: not-allowed;
   filter: none;
 }
